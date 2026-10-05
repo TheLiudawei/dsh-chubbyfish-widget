@@ -1,0 +1,34 @@
+{
+  "name": "dsh-corner-anim",
+  "version": "0.10.3",
+  "description": "DSH 右上角透明动画挂件：开场动画播完停在最后一帧，就地拆成「左电饭煲 / 右小女孩」两块各自可拖；小女孩按节拍轮播待机/动作两段动画，与「发送消息」联动（点发送她演一段，一轮对话完整结束后电饭煲原位开盖并收掉计时器）；两块各带点击 Q 弹、按压音效与随机事件（掉盆 / 拖动动画 / 电饭煲的两种随机开盖动画）。",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "widget",
+    "animation",
+    "webm",
+    "transparent",
+    "audio"
+  ],
+  "type": "module",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "node test/widget-harness.mjs && node test/host-harness.mjs"
+  },
+  "files": [
+    "lib",
+    "assets",
+    "docs",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "license": "MIT"
+}
